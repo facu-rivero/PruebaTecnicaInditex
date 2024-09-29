@@ -38,8 +38,8 @@ class PricesControllerTest {
         mockPricesDto.setProductId(35455L);
         mockPricesDto.setBrandId(1L);
         mockPricesDto.setPriceList(1L);
-        mockPricesDto.setStartDate(LocalDateTime.parse("2020-06-14 00:00:00", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
-        mockPricesDto.setEndDate(LocalDateTime.parse("2020-12-31 23:59:59", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        mockPricesDto.setStartDate(LocalDateTime.parse("2024-09-14 00:00:00", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        mockPricesDto.setEndDate(LocalDateTime.parse("2024-12-31 23:59:59", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         mockPricesDto.setPrice(35.50);
     }
 
@@ -51,7 +51,7 @@ class PricesControllerTest {
 
         // Realizo una petición GET a la API con los parámetros esperados
         mockMvc.perform(get("/v1/api/prices")
-                        .param("applicationDate", "2020-06-14 10:00:00")
+                        .param("applicationDate", "2024-09-14 10:00:00")
                         .param("productId", "35455")
                         .param("brandId", "1")
                         .contentType(MediaType.APPLICATION_JSON))
@@ -64,7 +64,7 @@ class PricesControllerTest {
                 .andExpect(jsonPath("$.brandId").value(1))
                 .andExpect(jsonPath("$.priceList").value(1))
                 .andExpect(jsonPath("$.price").value(35.50))
-                .andExpect(jsonPath("$.startDate").value("2020-06-14T00:00:00"))
-                .andExpect(jsonPath("$.endDate").value("2020-12-31T23:59:59"));
+                .andExpect(jsonPath("$.startDate").value("2024-09-14T00:00:00"))
+                .andExpect(jsonPath("$.endDate").value("2024-12-31T23:59:59"));
     }
 }
