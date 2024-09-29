@@ -8,6 +8,8 @@ class PriceServiceApplicationTests {
 
     @Test
     void contextLoads() {
+
+        //Metodo no utilizado
     }
 
 }

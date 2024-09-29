@@ -4,7 +4,6 @@ import com.pruebatecnicabcnc.priceservice.dto.PricesDto;
 import com.pruebatecnicabcnc.priceservice.service.PricesService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -21,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(PricesController.class)
-public class PricesControllerTest {
+class PricesControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -33,8 +32,6 @@ public class PricesControllerTest {
 
     @BeforeEach
     void setUp() {
-        // Inicializo los mocks de Mockito
-        MockitoAnnotations.initMocks(this);
 
         // Creo un PricesDto de ejemplo
         mockPricesDto = new PricesDto();
