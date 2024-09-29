@@ -23,8 +23,8 @@ public class PricesController {
 
     @GetMapping
     public ResponseEntity<PricesDto> getPrice(@RequestParam String applicationDate,
-                                              @RequestParam Integer productId,
-                                              @RequestParam Integer brandId) {
+                                              @RequestParam Long productId,
+                                              @RequestParam Long brandId) {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime date = LocalDateTime.parse(applicationDate, formatter);

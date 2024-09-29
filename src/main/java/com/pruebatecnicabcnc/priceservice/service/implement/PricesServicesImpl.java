@@ -19,7 +19,7 @@ public class PricesServicesImpl implements PricesService {
     private final PricesRepository pricesRepository;
 
     @Override
-    public PricesDto getPrice(LocalDateTime applicationDate, Integer productId, Integer brandId) {
+    public PricesDto getPrice(LocalDateTime applicationDate, Long productId, Long brandId) {
         List<Prices> prices = pricesRepository.findByProductIdAndBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqual(
                 productId, brandId, applicationDate, applicationDate);
 

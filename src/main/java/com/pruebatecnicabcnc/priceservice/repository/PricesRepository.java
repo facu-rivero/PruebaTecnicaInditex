@@ -11,6 +11,6 @@ import java.util.List;
 public interface PricesRepository extends JpaRepository<Prices, Long> {
 
     List<Prices> findByProductIdAndBrandIdAndStartDateLessThanEqualAndEndDateGreaterThanEqual(
-            Integer productId, Integer brandId, LocalDateTime startDate, LocalDateTime endDate
+            Long productId, Long brandId, LocalDateTime startDate, LocalDateTime endDate
     );
 }
