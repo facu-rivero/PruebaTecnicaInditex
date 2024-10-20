@@ -1,6 +1,7 @@
-package com.pruebatecnicabcnc.priceservice.service;
+package com.pruebatecnicainditex.priceservice.aplication.service;
 
-import com.pruebatecnicabcnc.priceservice.dto.PricesDto;
+import com.pruebatecnicainditex.priceservice.infrastructure.dto.PricesDto;
+
 import java.time.LocalDateTime;
 
 

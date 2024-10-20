@@ -1,4 +1,4 @@
-package com.pruebatecnicabcnc.priceservice.config;
+package com.pruebatecnicainditex.priceservice.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;

@@ -1,4 +1,4 @@
-package com.pruebatecnicabcnc.priceservice.model;
+package com.pruebatecnicainditex.priceservice.domain.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

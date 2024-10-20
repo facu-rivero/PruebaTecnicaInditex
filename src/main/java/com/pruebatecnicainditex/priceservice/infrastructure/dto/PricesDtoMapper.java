@@ -1,6 +1,6 @@
-package com.pruebatecnicabcnc.priceservice.dto;
+package com.pruebatecnicainditex.priceservice.infrastructure.dto;
 
-import com.pruebatecnicabcnc.priceservice.model.Prices;
+import com.pruebatecnicainditex.priceservice.domain.model.Prices;
 
 public class PricesDtoMapper {
     public static PricesDto toDto(Prices prices) {

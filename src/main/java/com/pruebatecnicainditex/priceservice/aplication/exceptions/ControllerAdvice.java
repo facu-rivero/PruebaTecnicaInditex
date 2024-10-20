@@ -1,6 +1,6 @@
-package com.pruebatecnicabcnc.priceservice.exceptions;
+package com.pruebatecnicainditex.priceservice.aplication.exceptions;
 
-import com.pruebatecnicabcnc.priceservice.dto.ErrorDto;
+import com.pruebatecnicainditex.priceservice.infrastructure.dto.ErrorDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

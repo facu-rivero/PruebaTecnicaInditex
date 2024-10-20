@@ -1,4 +1,4 @@
-package com.pruebatecnicabcnc.priceservice.dto;
+package com.pruebatecnicainditex.priceservice.infrastructure.dto;
 
 import lombok.Builder;
 import lombok.Data;
