@@ -1,7 +1,7 @@
-package com.pruebatecnicabcnc.priceservice.controller;
+package com.pruebatecnicainditex.priceservice.infrastructure.input;
 
-import com.pruebatecnicabcnc.priceservice.dto.PricesDto;
-import com.pruebatecnicabcnc.priceservice.service.PricesService;
+import com.pruebatecnicainditex.priceservice.infrastructure.dto.PricesDto;
+import com.pruebatecnicainditex.priceservice.aplication.service.PricesService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

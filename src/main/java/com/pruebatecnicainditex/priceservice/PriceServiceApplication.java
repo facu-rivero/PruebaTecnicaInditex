@@ -1,4 +1,4 @@
-package com.pruebatecnicabcnc.priceservice;
+package com.pruebatecnicainditex.priceservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-# Prueba Tecnica BCNC
+# Prueba Tecnica Inditex
 
-* Realizada entre los dias 26/09/2024 y 29/09/2024
-* Este repositorio contiene la solución a la prueba técnica propuesta por BCNC.
+* Realizada entre los dias 20/09/2024 y 21/09/2024
+* Este repositorio contiene la solución a la prueba técnica propuesta por Inditex.
 * El objetivo es crear un servicio REST para consultar precios de productos basado en una base de datos H2 en memoria.
 
 ### Swagger de Prices Api Rest
@@ -25,6 +25,12 @@ El proyecto fue desarrollado con una arquitectura en capas, donde cada capa tien
 * Controller: Gestiona las solicitudes HTTP y devuelve las respuestas adecuadas. Se utilizo Spring MVC para la creación de endpoints.
 * Service: Contiene la lógica de negocio y se encarga de interactuar con la capa de datos.
 * Repository: Se encarga de la persistencia y acceso a la base de datos. Utiliza Spring Data JPA.
+
+20/10/2024: El proyecto fue refactorizado a una arquitectura Hexagonal definiendo la siguiente estructura:
+
+* Domain: Esta capa contiene las entidades del dominio y los puertos que permiten a la lógica de negocio interactuar con el exterior.
+* Aplication: Contiene la lógica de los casos de uso que utilizan los puertos del dominio.
+* Infrastructure: Recibe los datos de entrada y salida mediante el controlador que interactua con la aplicacion y la persistencia que conecta con la base de datos para realizar las operaciones necesarias. 
 
 ## Patrones de Diseño
 
