@@ -1,6 +1,6 @@
 # Prueba Tecnica Inditex
 
-* Realizada entre los dias 20/09/2024 y 21/09/2024
+* Realizada entre los dias 20/10/2024 y 21/10/2024
 * Este repositorio contiene la solución a la prueba técnica propuesta por Inditex.
 * El objetivo es crear un servicio REST para consultar precios de productos basado en una base de datos H2 en memoria.
 
